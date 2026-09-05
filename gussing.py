@@ -1,0 +1,27 @@
+import random 
+
+def play_game ():
+
+    lucky_num = random.randint(1,100)
+
+    while True :
+
+        user_num = int(input("Guess the lucky number:"))
+
+        if user_num == lucky_num:
+
+            print ("You Won.Game Over")
+            break
+
+        elif user_num < lucky_num:
+
+            print ("Guess too low")
+
+        else:
+
+            print ("Guess To high")
+
+
+    print ("Thank You For Playing.")
+
+play_game()
